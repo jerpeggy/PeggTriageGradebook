@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <BorderPane id="AssignmentsPane" fx:id="AssignmentsPane" minHeight="-Infinity" minWidth="-Infinity">
+         <top>
+            <Label minWidth="100.0" prefWidth="500.0" text="Assignments" BorderPane.alignment="TOP_LEFT">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </BorderPane.margin>
+            </Label>
+         </top>
+         <bottom>
+            <Button alignment="CENTER" mnemonicParsing="false" onMouseClicked="#showRubric" text="View Rubric" textAlignment="CENTER" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </bottom>
+         <center>
+            <VBox BorderPane.alignment="CENTER">
+               <children>
+                  <GridPane gridLinesVisible="true">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="272.0" minWidth="10.0" percentWidth="70.0" prefWidth="272.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="162.0" minWidth="10.0" percentWidth="15.0" prefWidth="62.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="15.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="-Infinity" prefHeight="30.0" vgrow="NEVER" />
+                      <RowConstraints minHeight="-Infinity" prefHeight="20.0" vgrow="NEVER" />
+                      <RowConstraints minHeight="-Infinity" prefHeight="20.0" vgrow="NEVER" />
+                      <RowConstraints minHeight="-Infinity" prefHeight="20.0" vgrow="NEVER" />
+                        <RowConstraints minHeight="-Infinity" prefHeight="20.0" vgrow="NEVER" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Assignment Name">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </Label>
+                        <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Grade" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="177.0" layoutY="17.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Weight" GridPane.columnIndex="2">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label text="Assignment 1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin></Label>
+                        <Label layoutX="10.0" layoutY="42.0" text="Assignment 2" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin></Label>
+                        <Label layoutX="10.0" layoutY="62.0" text="Project 1" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin></Label>
+                        <Label layoutX="10.0" layoutY="82.0" text="Mid-Term Exam" GridPane.rowIndex="4">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin></Label>
+                        <Label alignment="CENTER" layoutX="10.0" layoutY="102.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="2" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label alignment="CENTER" layoutX="477.0" layoutY="42.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="2" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" layoutX="477.0" layoutY="62.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="2.333" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="2.273" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="1" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="1" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="3" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="11" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                     </children>
+                  </GridPane>
+                  <Label alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" text="TOTAL    36/48    (2.250)   B- " textAlignment="RIGHT">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin></Label>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+      <BorderPane id="RubricPane" fx:id="RubricPane" disable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" visible="false" GridPane.vgrow="SOMETIMES">
+         <top>
+            <Label minWidth="150.0" text="Grading Rubric" BorderPane.alignment="TOP_LEFT">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </BorderPane.margin>
+            </Label>
+         </top>
+         <center>
+            <VBox BorderPane.alignment="TOP_CENTER">
+               <children>
+                  <Pane>
+                     <children>
+                        <VBox>
+                           <children>
+                              <Label text="Grading Scale">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label text="3 - Assignment done and correct" wrapText="true">
+                                 <padding>
+                                    <Insets left="25.0" />
+                                 </padding>
+                              </Label>
+                              <Separator minWidth="-Infinity" prefWidth="450.0" />
+                              <Label text="2 - Assignment done and mostly correct" wrapText="true">
+                                 <padding>
+                                    <Insets left="25.0" />
+                                 </padding>
+                              </Label>
+                              <Separator minHeight="-Infinity" minWidth="-Infinity" prefWidth="450.0" />
+                              <Label text="1 - Assignment done but clearly incorrect" wrapText="true">
+                                 <padding>
+                                    <Insets left="25.0" />
+                                 </padding>
+                              </Label>
+                              <Separator minHeight="-Infinity" minWidth="-Infinity" prefWidth="450.0" />
+                              <Label text="0 - Assignment not done, or done but shows no understanding of material" wrapText="true">
+                                 <padding>
+                                    <Insets left="25.0" />
+                                 </padding>
+                              </Label>
+                              <Separator minHeight="-Infinity" minWidth="-Infinity" prefWidth="450.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="500.0">
+                           <children>
+                              <Label text="Letter Grades">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label layoutX="25.0" text="3.000 - 2.834     A">
+                                 <VBox.margin>
+                                    <Insets left="25.0" />
+                                 </VBox.margin></Label>
+                               <Separator minWidth="-Infinity" prefWidth="450.0" />
+                               <Label layoutX="25.0" text="2.833 - 2.626     A-">
+                                 <VBox.margin>
+                                    <Insets left="25.0" />
+                                 </VBox.margin></Label>
+                               <Separator minWidth="-Infinity" prefWidth="450.0" />
+                               <Label layoutX="25.0" text="2.625 - 2.501     B+">
+                                 <VBox.margin>
+                                    <Insets left="25.0" />
+                                 </VBox.margin></Label>
+                               <Separator minWidth="-Infinity" prefWidth="450.0" />
+                               <Label layoutX="25.0" text="2.500 - 2.334     B">
+                                 <VBox.margin>
+                                    <Insets left="25.0" />
+                                 </VBox.margin></Label>
+                               <Separator minWidth="-Infinity" prefWidth="450.0" />
+                               <Label layoutX="25.0" text="2.333 - 2.126     B-">
+                                 <VBox.margin>
+                                    <Insets left="25.0" />
+                                 </VBox.margin></Label>
+                               <Separator minWidth="-Infinity" prefWidth="450.0" />
+                               <Label layoutX="25.0" text="2.125 - 2.001     C+">
+                                 <VBox.margin>
+                                    <Insets left="25.0" />
+                                 </VBox.margin></Label>
+                               <Separator minWidth="-Infinity" prefWidth="450.0" />
+                               <Label layoutX="25.0" text="2.000 - 1.801     C">
+                                 <VBox.margin>
+                                    <Insets left="25.0" />
+                                 </VBox.margin></Label>
+                               <Separator minWidth="-Infinity" prefWidth="450.0" />
+                               <Label layoutX="25.0" text="1.800 - 1.601     C-">
+                                 <VBox.margin>
+                                    <Insets left="25.0" />
+                                 </VBox.margin></Label>
+                               <Separator minWidth="-Infinity" prefWidth="450.0" />
+                               <Label layoutX="25.0" text="1.600 - 1.401     D+">
+                                 <VBox.margin>
+                                    <Insets left="25.0" />
+                                 </VBox.margin></Label>
+                               <Separator minWidth="-Infinity" prefWidth="450.0" />
+                               <Label layoutX="25.0" text="1.400 - 1.201     D">
+                                 <VBox.margin>
+                                    <Insets left="25.0" />
+                                 </VBox.margin></Label>
+                               <Separator minWidth="-Infinity" prefWidth="450.0" />
+                               <Label layoutX="25.0" text="1.200 - 1.001     D-">
+                                 <VBox.margin>
+                                    <Insets left="25.0" />
+                                 </VBox.margin></Label>
+                               <Separator minWidth="-Infinity" prefWidth="450.0" />
+                               <Label layoutX="25.0" text="1.000 - 0.000     F">
+                                 <VBox.margin>
+                                    <Insets left="25.0" />
+                                 </VBox.margin></Label>
+                               <Separator minWidth="-Infinity" prefWidth="450.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Pane>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+            </VBox>
+         </center>
+         <bottom>
+            <Button mnemonicParsing="false" onMouseClicked="#closeRubric" text="Back" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets top="5.0" />
+               </BorderPane.margin>
+            </Button>
+         </bottom>
+      </BorderPane>
+   </children>
+</GridPane>
